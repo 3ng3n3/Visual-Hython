@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <script src="./hashes.js"></script>
+</head>
+<body>
+<script>
+  var Md = new Hashes.MD5();
+  var Now = new Hashes.SHA1();
+  while(true){
+    let senha = "7110eda4d09e062aa5e4a390b0a572ac0d2c0220";
+    let value = prompt("Senha: ")
+    if(Now.hex(value) == senha){
+      break
+    }else{
+      alert("Senha incorreta!")
+    }
+    if(value == "exit"){
+      break
+    }
+  }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChareCode</title>
+  <style>
+   @font-face {
+      font-family: title;
+      src: url("./GlitchInside-0Wjro.otf");
+    }
+  @font-face{
+    font-family: textBox;
+    src: url("./Pixel Bug.otf");
+  }
+    body{
+      margin: 0;
+    }
+    .displayShareCode{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: whitesmoke;
+    }
+    .barNaviShare{
+      position: fixed;
+      width: 100%;
+      height: 35px;
+      background-color: white;
+      box-shadow: 0px 0.5px 0px black;
+      font-family: title;
+      padding: 4px 0px 0px 0px;
+    }
+    .buttonsBarShare{
+      display: flex;
+      position: fixed;
+      left: 69%;
+      top: 1px;
+    }
+    .AnimatioText {
+      position: absolute;
+      width: 80%;
+      top: 60px;
+      padding-left: 3px;
+    }
+    .blockOfShare{
+      position: absolute;
+      width: 100%;
+      height: 40px;
+      background-color: black;
+      color: lawngreen;
+      font-family: monospace;
+      margin-bottom: 4px;
+    }
+    .codeShareArea{
+      display: grid;
+      position: absolute;
+      top: 150px;
+      left: 3px;
+    }
+    .AreacOdeShare{
+      position: relative;
+      width: 385px;
+      height: 200px;
+      background-color: black;
+      margin-bottom: 20px;
+      background-image: url("./backShare.png");
+      background-size: 100% 100%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      padding-left: 3px;
+      color: white;
+      overflow: scroll;
+    }
+  </style>
+ <script src="./jquery.js"></script>
+</head>
+<body>
+  <div class="displayShareCode" id="shareCode">
+   <div class="AnimatioText">
+    <h2 style="font-family: title; font-size: 15px;">Compartilhamento de Codigo <></h2>
+   <div class="blockOfShare" id="blockOfShare">
+     <spam id="textCode" style="font-size: 16px;"></spam><a id="anime" style="font-size: 11px;">|</a>
+       </div>
+        </div>
+    <div class="codeShareArea" id="shCode">
+      <spam class="AreacOdeShare" id="areaCodeShare">
+        <h3 style="color: white; font-family: title;">Visual Hython</h3>
+        <spam style="font-family: textBox; font-size: 14px;"> Projeto para voce que quer resolver uma equação de segundo grau!</spam>
+      </spam>
+      </div>
+    <div class="barNaviShare" id="barShare">
+      <h2 style="margin: 0;">Visual Hython</h2>
+      <div class="buttonsBarShare">
+       <button type="button" id="newShare" style="height: 30px;  background-color: white; border: none; box-shadow: 0.5px 1px 3px black; margin-right: 8px;">
+         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-arrow-up-fill" viewBox="0 0 16 16">
+           <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M7.5 6.707 6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0z" />
+         </svg>
+       </button>
+       <button type="button" id="backSearch" style="height: 30px;  background-color: white; border: none; box-shadow: 0.5px 1px 3px black; font-family: title;;">Voltar</button>
+      </div>
+    </div>
+  </div>
+  <script>
+  let value = " Visual Hython Coding World... <>"
+  let count = 0;
+  let reverse = true;
+    setInterval(() => {
+     if(!(count >= value.length) && reverse){
+       count++
+       $("#textCode").text(value.slice(0, count))
+     }else{
+       if (!(count <= 0)) {
+         count-=1
+         $("#textCode").text(value.slice(0, count))
+         reverse = false;
+       } else {
+         reverse = true;
+       }
+     }
+    },100)
+    setInterval(() => {
+      $("#anime").text("|")
+      setTimeout(() => {
+        $("#anime").text("")
+      },100)
+    },500)
+  
+  </script>
+</body>
+</html>

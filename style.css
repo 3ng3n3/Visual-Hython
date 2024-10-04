@@ -1,0 +1,473 @@
+  /*
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+  */
+  
+  @media (min-width: 1281px) {
+  
+    /* CSS */
+  
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+  
+    /* CSS */
+  
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+    /* CSS */
+  
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    /* CSS */
+  
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    /* CSS */
+  
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+  
+    /* CSS */
+  
+  }
+  @font-face{
+      font-family: title;
+      src: url("./GlitchInside-0Wjro.otf");
+    }
+  @font-face{
+    font-family: textBox;
+    src: url("./Pixel Bug.otf");
+  }
+    body{
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+      background-color: white;
+      color: white;
+    }
+    :root{
+       --width-mode-display-hython: 100%;
+       --height-mode-display-hython: 100%;
+       --thema-style-hython: #264C7D;
+       --border-radius-Sbtn: 3px;
+       --position-content-hearder: fixed;
+       --font-style-hython: monospace;
+       --position-thema-option: -400px;
+      }
+    .DisplayHenryDEVCode{
+      position: absolute;
+      width: var(--width-mode-display-hython);
+      height: var(--height-mode-display-hython);
+      background-color: white;
+      background-color: var(--thema-style-hython);
+      overflow: scroll;
+    }
+    .navbardisplay{
+      position: var(--position-content-hearder);
+      width: 100%;
+      height: 100px;
+      background-color: var(--thema-style-hython);
+    }
+    .btnSNav{
+      display: flex;
+      position: var(--position-content-hearder);
+      top: 5px;
+      left: 60%;
+    }
+    #btnMoreSave,#btnThemes,#btnSearch{
+      width: 45px;
+      height: 40px;
+      margin-left: 5px;
+      background-color: black;
+      color: white;
+      border: 1px solid black;
+      border-radius: var(--border-radius-Sbtn);
+    }
+    .btnAndTitle{
+      display: flex;
+      position: var(--position-content-hearder);
+      width: 200px;
+      top: 5px;
+      left: 3px;
+      font-family: Arial;
+      font-size: 19px;
+    }
+    #btnMore{
+      width: 45px;
+      height: 35px;
+      margin-right: 6px;
+      background-color: black;
+      border: 1px solid black;
+      border-radius: 3px;
+      color: white;
+    }
+    .arquivesName{
+      display: flex;
+      position: var(--position-content-hearder);
+      width: 100%;
+      height: 35px;
+      top: 70px;
+      border-bottom: 1px solid white;
+      overflow: scroll;
+      background-color: var(--thema-style-hython);
+    }
+    .AreaScroll{
+      display: grid;
+      position: absolute;
+      width: 970px;
+      top: 190px;
+      left: 5px;
+      font-family: monospace;
+      overflow: scroll;
+    }
+    .AreaCode{
+      position: absolute;
+      background-color: var(--font-style-hython);
+      top: 130px;
+      left: 3px;
+      padding-left: 1px;
+    }
+    .backgroundFoud{
+      position: var(--position-content-hearder);
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.5;
+    }
+    .moreOptionsDiv{
+      display: block;
+      position: var(--position-content-hearder);
+      width: 300px;
+      height: 100%;
+      left: -300px;
+      background-color: white;
+      overflow: scroll;
+    }
+    .filerOptions{
+      position: var(--position-content-hearder);
+      width: 185px;
+      height: 0px;
+      background-color: #7C7D8C;
+      top: 5px;
+      left: var(--position-thema-option); /* 200px */
+      padding: 10px 0px 0px 5px;
+      color: white;
+      font-size: 18px;
+      overflow: hidden;
+    }
+    .themes{
+      position: var(--position-content-hearder);
+      width: 185px;
+      height: 0px;
+      background-color: #7C7D8C;
+      top: 5px;
+      left: var(--position-thema-option); /* 200px  -200px */
+      padding: 10px 0px 0px 5px;
+      color: white;
+      font-size: 16px;
+      overflow: hidden;
+     }
+    .InShell, .pythonOptions, .settings, .credits{
+      display: block;
+      position: relative; 
+      height: 32%;
+      background-color: #7C7D8C; 
+      border-bottom: 1px solid black; 
+      padding-left: 13px;
+      padding-top: 10px;
+    }
+    .btnCodeOption{
+      display: block;
+      position: var(--position-content-hearder);
+      width: 43px;
+      height: 38px; /*260px*/
+      top: 170px;
+      left: 88%;
+      text-align: center;
+      background-color: #7C7D8C;
+      overflow: hidden;
+    }
+    #btnShowCodeOption{
+      width: 40px;
+      height: 40px;
+      background: none;
+      color: white;
+    }
+    .searchDiv{
+      display: block;
+      position: var(--position-content-hearder);
+      padding-left: 2%;
+      width: 290px;
+      height: 0px; /* 250px */
+      background-color: #7C7D8C;
+      top: 5px;
+      left: -1000px;
+      overflow: hidden;
+    }
+   .terminal-display{
+      position: var(--position-content-hearder);
+      left: -1000px;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      color: white;
+      font-size: 12px;
+      padding-left: 7px;
+      overflow: scroll;
+    }
+   .btnMinMax{
+      display: grid;
+      position: absolute;
+      left: 85%;
+    }
+   #zoom-max, #zoom-min{
+      background-color: white;
+      border: none;
+      margin-bottom: 16px;
+    }
+   #shellComand{
+      outline: none;
+      width: 92%;
+      background-color: black;
+      color: white;
+      border: none;
+      font-size: 12px;
+      text-transform: lowercase;
+      font-family: var(--font-style-hython);
+      text-overflow: ellipsis;
+    }
+  .displayLibraries{
+      display: block;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: -1000px;
+      background-color: var(--thema-style-hython);
+      color: white;
+      font-family: monospace;
+      overflow: scroll;
+   }
+  .titleLibrary{
+      position: relative;
+      padding-left: 4px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid white;
+   }
+  .displayide{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -1000px;
+    background-color: #264C7D;
+    font-family: monospace;
+    color: white;
+    overflow: scroll;
+  }
+  .AnimationTitle{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+  }
+  .titleA{
+    position: relative;
+    animation: n 4s linear infinite;
+  }
+    @keyframes n{to{left: -100%}from{left: 100%}}
+    .questions{
+      position: relative;
+      top: 90px;
+      padding-left: 5px;
+    }
+  #importFile[type="file"]{
+    display: none;
+  }
+  .historiContent{
+    position: fixed;
+    width: 95%;
+    height: 300px;
+    top: 20%;
+    left: -1000px; /* 2% */
+    background-color: #7C7D8C;
+    padding: 5px 0px 10px 5px;
+    font-weight: bold;
+    font-family: monospace;
+    overflow: scroll;
+  }
+  .backCovedGround{
+    position: var(--position-content-hearder);
+    opacity: 0.5;
+  }
+  .nameRename{
+      position: fixed;
+      top: 40%;
+      padding: 10px 0px 0px 5px;
+      font-size: 14px;
+      background-color: #7C7D8C;
+      border-radius: 6px;
+      margin: 0px 0px 5px 5px;
+      left: -1000px;
+      width: 95%;
+    }
+  #namefile{
+      outline: none;
+      background: none;
+      color: white;
+      border: none;
+      border-bottom: 1px solid white;
+      font-size: 14px;
+      font-family: monospace;
+      font-weight: bold;
+    }
+  .backgroundrename{
+    position: var(--position-content-hearder);
+    opacity: 0.5;
+  }
+  .allRelate{
+    position: var(--position-content-hearder);
+    opacity: 0.5;
+  }
+  .AllRelated{
+    position: fixed;
+    top: 20%;
+    padding: 10px 0px 0px 5px;
+    font-size: 14px;
+    background-color: #7C7D8C;
+    border-radius: 6px;
+    margin: 0px 0px 5px 5px;
+    left: -1000px;
+    width: 95%;
+    height: 400px;
+  }
+  #relateAll{
+    width: 300px;
+    height: 100px;
+    outline: none;
+    border: none;;
+    border-radius: 5px;
+  }
+  .Coffee{
+    position: fixed;
+    top: 30%;
+    padding: 5px 0px 0px 5px;
+    font-size: 14px;
+    background-color: #7C7D8C;
+    border-radius: 6px;
+    margin: 0px 0px 5px 5px;
+    left: -1000px;
+    width: 95%;
+    height: 200px;
+  }
+  .displayShareCode{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: whitesmoke;
+      left: -1000px;
+      overflow: scroll;
+  }
+  .barNaviShare{
+      position: fixed;
+      width: 100%;
+      height: 35px;
+      background-color: white;
+      box-shadow: 0px 0.5px 0px black;
+      font-family: title;
+      padding: 4px 0px 0px 0px;
+      color: black;
+    }
+  .buttonsBarShare{
+      position: absolute;
+      left: 80%;
+      top: 0px;
+    }
+  .AnimatioText {
+      position: absolute;
+      width: 80%;
+      top: 60px;
+      padding-left: 3px;
+      color: black;
+    }
+  .blockOfShare{
+      position: absolute;
+      width: 100%;
+      height: 40px;
+      background-color: black;
+      color: lawngreen;
+      font-family: monospace;
+      margin-bottom: 4px;
+    }
+  .codeShareArea{
+      display: grid;
+      position: absolute;
+      top: 150px;
+      left: 3px;
+    }
+  .AreacOdeShare{
+      position: relative;
+      width: 385px;
+      height: 200px;
+      background-color: black;
+      margin-bottom: 20px;
+      background-image: url("./backShare.png");
+      background-size: 100% 100%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      padding-left: 3px;
+      color: white;
+      overflow: scroll;
+    }
+    .displayRunCode{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      color: white;
+      font-size: 11px;
+      font-family: monospace;
+      left: -1000px;
+    }
+     .displaySplash{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #42445A;
+      color: white;
+    }

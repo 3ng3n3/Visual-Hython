@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visual Hython</title>
+  <link rel="website icon" type="png" href="./image.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./jquery.js"></script>
+</head>
+<body>
+  <div class="DisplayHenryDEVCode" id="displayDev">
+      <div class="AreaScroll" id="areascroll">
+        </div>
+    <div class="AreaCode">
+  <fieldset style="margin-bottom: 10px; width: 100%; border: 1px solid white;border-left: none; border-right: none; border-bottom: none; background-color: #264C7D;"><legend><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-file-earmark-code" viewBox="0 0 16 16">
+    <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
+    <path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708" />
+  </svg></legend><spam style="font-size: 18px; margin-right: 15px;">Área Code - Visual Hython</spam></fieldset>
+    </div>
+       <div class="btnCodeOption">
+         <button type="button" id="btnShowCodeOption" style="margin-bottom: 15px; border: none;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+             <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+           </svg></button>
+        <button type="button" id="refe" style="margin-bottom: 15px; border-radius: 10px; border: none;">
+         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5" />
+                  </svg></button>
+   <button type="button" id="no-refe" style="margin-bottom: 15px; border-radius: 10px; border: none;">
+         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 0 16 16">
+       <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5" />
+                  </svg></button>
+         <button type="button" id="copy" style="margin-bottom: 15px; border-radius: 10px; border: none;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-clipboard-fill" viewBox="0 0 16 16">
+             <path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2" />
+           </svg></button>
+         <button type="button" id="cut" style="margin-bottom: 15px; border-radius: 10px; border: none;">
+           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-scissors" viewBox="0 0 16 16">
+             <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0m7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+           </svg></button>
+         <button type="button" id="pageUp" style="background: none; border: none; color: white; margin-bottom: 15px;"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+             <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+           </svg></button>
+         <button type="button" id="pageDown" style="background: none; border: none; color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+           </svg></button>
+       </div>
+       <div class ="navbardisplay" id="navdisplay">
+    <div class="btnSNav" id="btnsNav">
+      <button type="button" id="btnMoreSave"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
+        <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
+      </svg></button>
+      <button type="button" id="btnThemes"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+      </svg></button>
+      <button type="button" id="btnSearch"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+      </svg></button>
+    </div>
+    <div class="btnAndTitle" id="btnandTitle">
+      <button type="button" id="btnMore"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+      </svg></button><spam id="filename">Crie uma Área</spam>
+    </div>
+    <div class="arquivesName" id="ArquiveName"></div>
+      <div class="themes" id="themesoption">
+        <div class="Themes" id="themesOpt" style="display: grid;">
+          <spam id="btnbug" style="font-size: 17px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bug-fill" viewBox="0 0 16 16">
+              <path d="M4.978.855a.5.5 0 1 0-.956.29l.41 1.352A5 5 0 0 0 3 6h10a5 5 0 0 0-1.432-3.503l.41-1.352a.5.5 0 1 0-.956-.29l-.291.956A5 5 0 0 0 8 1a5 5 0 0 0-2.731.811l-.29-.956z" />
+              <path d="M13 6v1H8.5v8.975A5 5 0 0 0 13 11h.5a.5.5 0 0 1 .5.5v.5a.5.5 0 1 0 1 0v-.5a1.5 1.5 0 0 0-1.5-1.5H13V9h1.5a.5.5 0 0 0 0-1H13V7h.5A1.5 1.5 0 0 0 15 5.5V5a.5.5 0 0 0-1 0v.5a.5.5 0 0 1-.5.5zm-5.5 9.975V7H3V6h-.5a.5.5 0 0 1-.5-.5V5a.5.5 0 0 0-1 0v.5A1.5 1.5 0 0 0 2.5 7H3v1H1.5a.5.5 0 0 0 0 1H3v1h-.5A1.5 1.5 0 0 0 1 11.5v.5a.5.5 0 1 0 1 0v-.5a.5.5 0 0 1 .5-.5H3a5 5 0 0 0 4.5 4.975" />
+            </svg>
+            Relatar Bug
+          </spam><br />
+          <spam id="btnSugestion" style="font-size: 17px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+              <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15" />
+            </svg>
+            Sua sugestão
+          </spam><br />
+          <spam id="buycoffee" style="font-size: 17px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cup-hot-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6zM13 12.5a2 2 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5" />
+              <path d="m4.4.8-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 3.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 6.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 9.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8" />
+            </svg>
+            Um cafe?
+          </spam>
+        </div>
+      </div>
+        <div class="filerOptions" id="fileoption">
+          <div class="options-Organize" style="display: grid; width: 150px;" id="OptionOrg">
+            <spam id="newFile" style="margin-bottom: 18px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+              </svg> Novo</spam>
+            <label id="import" style="margin-bottom: 18px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-arrow-down-fill" viewBox="0 0 16 16">
+                <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M8 5a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5A.5.5 0 0 1 8 5" />
+              </svg> Importar<input type="file" id="importFile"/></label>
+            <spam id="saveFile" style="margin-bottom: 18px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-floppy-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0H3v5.5A1.5 1.5 0 0 0 4.5 7h7A1.5 1.5 0 0 0 13 5.5V0h.086a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5H14v-5.5A1.5 1.5 0 0 0 12.5 9h-9A1.5 1.5 0 0 0 2 10.5V16h-.5A1.5 1.5 0 0 1 0 14.5z" />
+                <path d="M3 16h10v-5.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5zm9-16H4v5.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5zM9 1h2v4H9z" />
+              </svg> Salvar Tudo</spam>
+            <spam id="saveAsfile" style="margin-bottom: 18px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save2-fill" viewBox="0 0 16 16">
+                <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2z" />
+              </svg> Único Projeto</spam>
+            <spam id="closeFile" style="margin-bottom: 18px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+              </svg> Fechar Todos</spam>
+            <spam id="recentFiles"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm-fill" viewBox="0 0 16 16">
+                <path d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5m2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.04 8.04 0 0 0 .86 5.387M11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.04 8.04 0 0 0-3.527-3.527" />
+              </svg> Recentes</spam>
+          </div>
+        </div>
+        </div>
+        <div class="backCovedGround" id="groundCover"></div>
+        <div class="historiContent" id="historicontent">
+          <h2>Recentes <></h2>
+          <button type="button" id="btndeleterecents" style="height: 35px; font-size: 16px; border: none; border-radius: 4px; margin-bottom: 15px;">Excluir Historico</button><br>
+        </div>
+        <div class="searchDiv" id="sDiv">
+          <div class="boxSearch" style="display: block; width: 100%;">
+          <h2>Pesquise:</h2>
+           <label>Arquivo: </label><input type="text" id="searchFile" style="outline: none; height: 25px; border: none; border-radius: 5px;" />
+          </div>
+          <div class="arquiveSearch" id="searchfile" style="display: flex; margin-top: 20px; margin-bottom: 5px; overflow: scroll; font-size: 17px;">
+       <spam style="font-family: monospace; font-size: 20px; margin-left: 15px; background-color: slategray">File.py</spam>
+          </div>
+          <div class="pages" style="display: block; margin-top:  65px;">
+           <button type="button" id="pageDownSearch" style="background: none; border: none; color: white; margin-left: 15px; transform: rotate(-90deg);"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+             <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+           </svg></button>
+     <button type="button" id="pageUpSearch" style="background: none; border: none; color: white; transform: rotate(90deg)"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+       <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+     </svg></button>
+     <button type="button" id="closeSearch" style="background: none; border: none; color: white; margin-left: 10px;">
+       <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+       </svg>
+     </button>
+          </div>
+        </div>
+        <div class="displayLibraries" id="pageLibri">
+          <div class="titleLibrary">
+            <h2>Suas bibliotecas instaladas.</h2>
+            <spam>Bibliotecas são pacotes que vão auxiliar você bastante na hora de desenvolver ou fazer uma automação por exemplo. E possivel instalar bibliotecas atraves do terminal com o comando "pip install [biblioteca]" por padrão algumas bliotecas ja vem instaladas no programa, veja exemplos na area de "Exemplos" caso não esteja familiarizado. Veja abaixo suas bibliotecas:</spam>
+          </div>
+          <div class="librariesVer" style="display: grid; position:  relative; margin-top: 7px; padding-left: 4px;">
+            <h2>Bibliotecas</h2>
+            <spam id="librarie" style="margin-bottom: 10px; font-size: 17px;">Random</spam>
+             <spam id="librarie" style="margin-bottom: 10px; font-size: 17px;">Math</spam>
+             <spam id="librarie" style="margin-bottom: 10px; font-size: 17px;">Time</spam>
+             <spam id="librarie" style="margin-bottom: 10px; font-size: 17px;">Requests</spam>
+          </div>
+          <div class="btnPush" id="btnPush" style="position: absolute; left: 85%;">
+            <button type="button" id="closeLibrariePage" style="background: none; border: none; color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1" />
+              </svg></button>
+          </div>
+        </div>
+     <div class="displayide" id="displayIde">
+         <div class="AnimationTitle">
+            <spam class="titleA">Visual Hython</spam>
+              </div>
+                <div class="questions">
+                  <h1>Atualizações</h1>
+                    <spam>Versão: 0.0.1(ate o momento)</spam><br><br>
+                      <spam> Ultima modificação: Nada feito ainda.</spam><br><br>
+                        <spam>Desenvolvedor: Henry</spam><br><br>
+                   <spam>GitHub: <a href="https://github.com/3ng3n3" style="color: white;">Eng3ne</a></spam><br><br>
+                   <spam>Menssagem do Dev: Projeto pode ficar inativo, não recebendo atualizações, por conta de ser so um dev no projeto inteiro.</spam>
+                 </div>
+                 <div class="btnPushAt" id="btnPushAt" style="position: absolute; left: 85%; top: 100px;">
+                   <button type="button" id="closeLibrariePage" style="background: none; border: none; color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                       <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1" />
+                     </svg></button>
+                 </div>
+               </div>
+               <div class="backgroundrename" id="backrename"></div>
+                 <div class="nameRename" id="namerename">
+    <spam><button type="submit" id="confirm" style="margin-bottom: 10px; width: 80px; height: 30px; font-size: 15px; font-weight: bold;">Renomear</button></spam><br>
+        <label for="namefile">Nome do arquivo: </label>
+    <input type="text" id="namefile" name="filepy"/><spam>.py</spam><spam id="leng">0</spam><br><br><spam id="ERROr"></spam>
+  </div>
+  <div class="allRelate" id="allrelate"></div>
+  <div class="AllRelated" id="allrelated">
+  <h2 style="font-family: monospace;">Relate ou der sugestões que você acha que melhoria o programa:</h2>
+  <h3 id="titlerelate"></h3>
+  <textarea id="relateAll" placeholder="Dava pra melhorar isso..."></textarea><br><br>
+  <button type="button" id="btnRelated" style="font-size: 20px; border: none; font-family: monospace; background-color: white; background-color: #264C7D; color: white; height: 30px;">Enviar</button>
+  <p style="font-size: 14px; font-family: monospace;">Qualquer duvida e so mandar!</p>
+  <h3 style="font-size: 20px;">Visual Hython</h3>
+  </div>
+  <div class="Coffee" id="coffee">
+    <h3 style="font-size: 16; font-family: monospace;">Gostaria de comprar um cafe para o desenvolvedor?☕</h3>
+    <spam>Chave pix:</spam>
+    <h3>1c958f08-5218-4470-a1d7-87f615e1d7f2</h3>
+  </div>
+    <div class="displayShareCode" id="shareCode">
+   <div class="AnimatioText">
+    <h2 style="font-family: title; font-size: 15px;">Exemplo de Codigos <></h2>
+   <div class="blockOfShare" id="blockOfShare">
+     <spam id="textCode" style="font-size: 16px;"></spam><a id="anime" style="font-size: 11px;">|</a>
+       </div>
+        </div>
+    <div class="codeShareArea" id="shCode">
+      <spam class="AreacOdeShare" id="btnExampleWord">
+        <h3 style="color: white; font-family: title;">Hello World</h3>
+        <spam style="font-family: textBox; font-size: 14px;"> Seu primeiro hello word com python!!</spam>
+      </spam>
+     <spam class="AreacOdeShare" id="btnExampleVar">
+       <h3 style="color: white; font-family: title;">Variaveis</h3>
+       <spam style="font-family: textBox; font-size: 14px;"> Aprenda como declarar variaveis no python! string, boolean, int e float!</spam>
+    </spam>
+       <spam class="AreacOdeShare" id="btnExampleOpe">
+         <h3 style="color: white; font-family: title;">Operadorea</h3>
+         <spam style="font-family: textBox; font-size: 14px;"> Saiba como realizar qualquer tipo de operação com python! Seja soma,subtração,divisão, multiplicação etc.</spam>
+       </spam>
+         <spam class="AreacOdeShare" id="btnExampleCod">
+           <h3 style="color: white; font-family: title;">Estrutura Codicional</h3>
+           <spam style="font-family: textBox; font-size: 14px;">Quando o programa precisa escolher outro caminho... essa e a estrutura codicional if!</spam>
+         </spam>
+         <spam class="AreacOdeShare" id="btnExampleFuc">
+           <h3 style="color: white; font-family: title;">Funções</h3>
+           <spam style="font-family: textBox; font-size: 14px;"> Vamos deixar pra chamar esse codigo em outro momento, iremos aprender sobre funções!</spam>
+         </spam>
+         <spam class="AreacOdeShare" id="btnExampleFor">
+           <h3 style="color: white; font-family: title;">Laço de repetição For/listas no python!</h3>
+           <spam style="font-family: textBox; font-size: 14px;"> Eita! ja deve ta craque hein?! sabia que tem um site so com desafios interessantes para explorar!? acesse <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://wiki.python.org.br/ListaDeExercicios&ved=2ahUKEwihuJuqnoyIAxUgLrkGHVSJIiQQFnoECBkQAQ&usg=AOvVaw12OAs48wOnDrFxIDcWsHc7">Python Brasil Exercicios.</a><br><br>Estrutura de Repetição For/Listas no python!</spam>
+         </spam>
+   <spam style="color: black; font-size: 14px;">Aguardando Atualizações de novos exemplos...</spam>
+  </div>
+    <div class="barNaviShare" id="barShare">
+      <h2 style="margin: 0;">Visual Hython</h2>
+      <div class="buttonsBarShare">
+       <button type="button" id="backHython" style="height: 30px;  background-color: white; border: none; box-shadow: 0.5px 1px 3px black; font-family: title;">Voltar</button>
+      </div>
+    </div>
+  </div>
+     <div class="displayRunCode" id="runCode">
+  <h2>Visual Hython Compilador</h2>
+  <spam style="margin-left: 4px; margin-top: 5px;" id="codeReturn"></spam>
+</div>
+  </div>
+  <div class="n" style="display: flex;"></div>
+   <div class="moreOptionsDiv" id="moreOptionsdiv">
+     <div class="titleLines"  id="titleL" style="width: 100%; height: 140px; background-color: #264C7D; align-content: center; text-align: center;">
+       <spam id="namescript" style="font-size: 18px; font-family: monospace;"></spam><br><br>
+       <spam id="lineNumbers"></spam>
+     </div>
+       <div class="InShell">
+       <h3>Terminal - Interpreter</h3><br />
+       <spam id="interpretstart" style="font-size: 17px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16" style="padding-right: 13px;">
+         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+       </svg>Interprete</spam><br /><br /><br />
+       <spam id="startShell" style="font-size: 17px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16" style="padding-right: 9px;">
+         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+       </svg> Terminal</spam>
+      </div>
+       <div class="pythonOptions">
+          <spam id="libraryInstall"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16" style="padding-right: 9px;">
+            <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003zM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461z" />
+          </svg> Bibliotecas</spam><br /><br />
+          <spam id="examplesPython"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16" style="padding-right: 9px;">
+            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708" />
+          </svg> Storage Hython</spam><br /><br />
+          <spam id="startcodeShare"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-book-fill" viewBox="0 0 16 16" style="padding-right: 9px;">
+            <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+          </svg> Exemplos</spam><br /><br />
+          <spam id="newide"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-file-binary-fill" viewBox="0 0 16 16" style="padding-right: 9px;">
+            <path d="M5.526 9.273c-.542 0-.832.563-.832 1.612q0 .133.006.252l1.56-1.143c-.126-.474-.375-.72-.733-.72zm-.732 2.508c.126.472.372.718.732.718.54 0 .83-.563.83-1.614q0-.129-.006-.25z" />
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M7.05 10.885c0 1.415-.548 2.206-1.524 2.206C4.548 13.09 4 12.3 4 10.885c0-1.412.548-2.203 1.526-2.203.976 0 1.524.79 1.524 2.203m3.805 1.52V13h-3v-.595h1.181V9.5h-.05l-1.136.747v-.688l1.19-.786h.69v3.633z" />
+          </svg> Nova versão!?</spam>
+         </div>
+         <div class="credits">
+           <h3>Créditos</h3>
+           <spam>Created by Henry.</spam>
+           <br /><br />
+           <spam>Versão: 0.0.1</spam>
+           <br /><br />
+           <spam>Visual Hython</spam>
+           </div>
+   </div>
+         <div class="terminal-display" id="td">
+           <div class="ProcessArea">
+             <div class="hythonTitle" style="font-family: monospace;">
+               <h1>Hython Terminal</h1>
+               <spam>[+] Faça download de suas bibliotecas</spam><br>
+               <br>
+               <spam>[+] Em breve mais recursos para o terminal</spam>
+               <h3>Visual Hython</h3>
+             </div>
+           </div>
+           <label for="shellComand" style="color: lawngreen;">~ $ </label>
+           <input type="text" id="shellComand" name="shellc" />
+           <div class="btnMinMax">
+             <button type="button" id="zoom-max"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16">
+                 <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0" />
+                 <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z" />
+                 <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5" />
+               </svg></button>
+             <button type="button" id="zoom-min">
+               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-zoom-out" viewBox="0 0 16 16">
+                 <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0" />
+                 <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z" />
+                 <path fill-rule="evenodd" d="M3 6.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5" />
+               </svg>
+             </button>
+           </div>
+         </div>
+          <script src="./v.js"></script>
+          <script src="./events.js"></script>
+         <script src="./processSystem.js"></script>
+         <script src="./terminalSystem.js"></script>
+          <script src="./examples.js"></script>
+        <script src="./script.js"></script>
+</body>
+</html>
